@@ -164,7 +164,19 @@ const SignupForm = () => {
               "Sign Up"
             )}
           </Button>
-
+          <Link to="https://henstackchatapp.vercel.app/">
+            <Button
+              type="button"
+              className="flex flex-col gap-5 w-full mt-4 shad-button_secondary">
+              {isCreatingAccount || isSigningInUser || isUserLoading ? (
+                <div className="flex-center gap-2">
+                  <Loader /> Loading...
+                </div>
+              ) : (
+                "Henstack Chat App"
+              )}
+            </Button>
+          </Link>
           <p className="text-small-regular text-light-2 text-center mt-2">
             Already have an account?
             <Link

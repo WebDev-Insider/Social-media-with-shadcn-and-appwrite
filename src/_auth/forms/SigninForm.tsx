@@ -109,6 +109,19 @@ const SigninForm = () => {
               "Log in"
             )}
           </Button>
+          <Link to="https://henstackchatapp.vercel.app/">
+            <Button
+              type="button"
+              className="flex flex-col gap-5 w-full mt-4 shad-button_secondary">
+              {isLoading || isUserLoading ? (
+                <div className="flex-center gap-2">
+                  <Loader /> Loading...
+                </div>
+              ) : (
+                "Henstack Chat App"
+              )}
+            </Button>
+          </Link>
 
           <p className="text-small-regular text-light-2 text-center mt-2">
             Don&apos;t have an account?
@@ -116,6 +129,14 @@ const SigninForm = () => {
               to="/sign-up"
               className="text-primary-500 text-small-semibold ml-1">
               Sign up
+            </Link>
+          </p>
+          <p className="text-small-regular text-light-2 text-center mt-2">
+            Forgotten password?
+            <Link
+              to="https://extraordinary-kataifi-209693.netlify.app/"
+              className="text-primary-500 text-small-semibold ml-1">
+              Click Here
             </Link>
           </p>
         </form>
