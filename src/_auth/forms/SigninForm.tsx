@@ -109,7 +109,7 @@ const SigninForm = () => {
               "Log in"
             )}
           </Button>
-          <Link to="https://henstackchatapp.vercel.app/">
+          <Link to="https://new-henstack-chat-application-with-priv-webdevinsiders-projects.vercel.app/">
             <Button
               type="button"
               className="flex flex-col gap-5 w-full mt-4 shad-button_secondary">
